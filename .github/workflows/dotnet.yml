@@ -27,7 +27,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
 - name: Publish
-  run: dotnet publish -c Release -o website
 - name: Upload artifact for deployment job
   uses: actions/upload-artifact@v4.4.3
   with:
@@ -53,4 +52,4 @@ Minimum 1 day. Maximum 90 days unless changed from the repository settings page.
     # If true, hidden files will be included in the artifact. If false, hidden files will be excluded from the artifact.
 
     include-hidden-files: # optional, default is false
-          
+  run: dotnet publish -c Release -o website
